@@ -1,0 +1,14 @@
+{
+    
+    "ancestorPreset" : 1,
+    "azartPreset" : 2,
+    "demonPreset" : 3,
+    "argonPreset" : 4,
+    "basicPreset" : 5,
+    "godPreset" : 6,
+    "magicalPreset" : 7,
+
+    "defaultEffect" : 22,
+    "secondaryEffect" : 17
+    
+}
