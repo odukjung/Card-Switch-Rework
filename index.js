@@ -37,30 +37,44 @@ module.exports = function CardPresets(mod) {
 
     });
 
-  function setPresetAndEffects(colId, presetId)
-  {
+    mod.hook('C_USE_ITEM', 3, (event) => {
 
-    clearEffects();
-    mod.toServer('C_ACTIVATE_CARD_COMBINE_LIST', 1, {
-        id: colId
-    })
-    mod.toServer('C_CHANGE_CARD_PRESET', 1, {
-        preset: presetId
-    })
-  }
+        if(config.fishing)
+        {
+            config.rodID.forEach(e => {
+                if(event.id == e)
+                {
+                    setPresetAndEffects(config.secondaryEffect, config.fishPreset -1)
+                }
+            });
+        }
 
-  function clearEffects()
-  {
-     for (let i = 0; i < 34; i++) {
-         
-        mod.toServer('C_DEACTIVATE_CARD_COMBINE_LIST', 1, {
-            id: i
+    });
+    
+    function setPresetAndEffects(colId, presetId)
+    {
+
+        clearEffects();
+        mod.toServer('C_ACTIVATE_CARD_COMBINE_LIST', 1, {
+            id: colId
         })
-         
-     }
-     mod.toServer('C_ACTIVATE_CARD_COMBINE_LIST', 1, {
-        id: config.defaultEffect
-    })
-  }
+        mod.toServer('C_CHANGE_CARD_PRESET', 1, {
+            preset: presetId
+        })
+    }
+
+    function clearEffects()
+    {
+        for (let i = 0; i < 34; i++) {
+            
+            mod.toServer('C_DEACTIVATE_CARD_COMBINE_LIST', 1, {
+                id: i
+            })
+            
+        }
+        mod.toServer('C_ACTIVATE_CARD_COMBINE_LIST', 1, {
+            id: config.defaultEffect
+        })
+    }
 
 }
