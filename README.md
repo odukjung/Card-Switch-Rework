@@ -21,6 +21,4 @@ Supported dungeons:
 
 Opcodes for EU
 
-DM on discord if help needed: Mingo The Slump God#0001
-
 I succ at coding, yes
