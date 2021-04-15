@@ -65,7 +65,7 @@ module.exports = function CardPresets(mod) {
 
     function clearEffects()
     {
-        for (let i = 0; i < 34; i++) {
+        for (let i = 0; i < 36; i++) {
             
             mod.toServer('C_DEACTIVATE_CARD_COMBINE_LIST', 1, {
                 id: i
