@@ -1,9 +1,8 @@
 {
     "disableAutoUpdate": false,
-    "name": "Card Changer",
-    "author": "Mingo",
+    "name": "Card Changer Rework",
+    "author": "Mingo , odukjung",
     "description": "Changes Card presets and collection effects",
     "version": "1.0",
-    "servers": ["https://raw.githubusercontent.com/xdmingo/card-switcher/main/"],
-    "supportUrl": "https://github.com/xdmingo/card-switcher/issues"
+    "servers": [""],
 }
