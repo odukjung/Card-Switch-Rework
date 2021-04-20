@@ -7,6 +7,7 @@
 * Set the IDs of the base collection effect (defaultEffect = The one that is selected all the time, secondaryEffect = This one will be selected if you enter a dungeon with a boss of no type)
 
 
+
 | Supported Dungeons |
 | ------------------------ |
 | Gossamer Vault (Easy) |
