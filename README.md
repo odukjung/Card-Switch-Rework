@@ -7,18 +7,20 @@
 * Set the IDs of the base collection effect (defaultEffect = The one that is selected all the time, secondaryEffect = This one will be selected if you enter a dungeon with a boss of no type)
 
 Supported dungeons:
-* CKG
-* KG
-* CATN
-* CATH
-* FA
-* CSNM
-* CSHM
-* Bahaar
-* DA
-* AQ
-* GV and RMN (basic preset and effect only)
-
-Opcodes for EU
-
-I succ at coding, yes
+* Gossamer Vault (Easy)
+* Akalath Quarantine
+* Ruinous Manor (Normal)
+* Ruinous Manor (Hard)
+* Manglemire
+* Commander Residence
+* Catalepticon
+* Catalepticon (Hard)
+* Killing Grounds
+* Killing Grounds (Hard)
+* Draakon Arena
+* Forbidden Arena [Undying Warlord]
+* Corrupted Skynest
+* Corrupted Skynest (Hard)
+* Bahaar Sanctum
+* Dreadreaper (Guardian Legion)
+* Vehemos (Guardian Legion)
