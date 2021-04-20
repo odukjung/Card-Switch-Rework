@@ -2,8 +2,6 @@ const config = require('./config.json');
 let zoneId;
 
 module.exports = function CardPresets(mod) {
-
-    mod.hook('S_LOAD_TOPO', 3, (event) => {
         
 		mod.hook('S_SPAWN_NPC', 12, (event) => 
 		{
@@ -227,8 +225,6 @@ module.exports = function CardPresets(mod) {
 					*/
 				}
 		});
-
-    });
 
     mod.hook('C_USE_ITEM', 3, (event) => {
 
