@@ -5,6 +5,7 @@
 * 10 page Preset Card
 * 35 Collection Effect or edit the number with the of collection effect you have
   | Preset Card |
+  | ------------------------ |
   | "Ancestor Preset" : 1 |
   | "Azart Preset" : 2 |
   | "Demon Preset" : 3 |
