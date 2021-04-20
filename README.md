@@ -24,3 +24,4 @@ Supported dungeons:
 | Bahaar Sanctum |
 | Dreadreaper (Guardian Legion) |
 | Vehemos (Guardian Legion) |
+| 37 - Etching Essence |
