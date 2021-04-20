@@ -1,14 +1,1 @@
-{
-	"files": {
-		"README.md": "29ebc3ab97710795b0615459c2c883491f00983ed73d4d0e89dd1dbbf4ee425c",
-		"index.js": "246061e8070cc4bbeab1b327191cd4e8aa92112ec8e58c8a6ba4f0ac2b6a0a9d",
-		"module.json": "733d345e282f05da485661d8c56c10c904b13cc76a04b0e00aa4e4303c6a441d"
-	},
-	"defs": {
-		"C_ACTIVATE_CARD_COMBINE_LIST": 1,
-		"C_CHANGE_CARD_PRESET": 1,
-		"C_DEACTIVATE_CARD_COMBINE_LIST": 1,
-		"C_USE_ITEM": 3,
-		"S_LOAD_TOPO": 3
-	}
-}
+{"files": {}}
