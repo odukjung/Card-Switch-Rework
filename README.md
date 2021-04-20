@@ -6,16 +6,16 @@
 * 35 Collection Effect or edit the number with the of collection effect you have
   | Preset Card |
   | ------------------------ |
-  | "Ancestor Preset" : 1 |
-  | "Azart Preset" : 2 |
-  | "Demon Preset" : 3 |
-  | "Argon Preset" : 4 |
-  | "Basic Preset" : 5 |
-  | "God Preset" : 6 |
-  | "Magical Creature" : 7 |
+  | "Ancestor Preset"      : 1 |
+  | "Azart Preset"         : 2 |
+  | "Demon Preset"         : 3 |
+  | "Argon Preset"         : 4 |
+  | "Basic Preset"         : 5 |
+  | "God Preset"           : 6 |
+  | "Magical Creature"     : 7 |
   | "Magicaldevice Preset" : 8 |
-  | "Giant Preset" : 9 |
-  | "Fish Preset" : 10 |
+  | "Giant Preset"         : 9 |
+  | "Fish Preset"          : 10 |
 
 ### Instructions
 * Add defs to \TeraToolbox\data\definitions
