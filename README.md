@@ -6,7 +6,9 @@
 * Set the IDs of your preset in `config.json`
 * Set the IDs of the base collection effect (defaultEffect = The one that is selected all the time, secondaryEffect = This one will be selected if you enter a dungeon with a boss of no type)
 
-Supported dungeons:
+
+| Supported Dungeons |
+| ------------------------ |
 | Gossamer Vault (Easy) |
 | Akalath Quarantine |
 | Ruinous Manor (Normal) |
@@ -24,4 +26,3 @@ Supported dungeons:
 | Bahaar Sanctum |
 | Dreadreaper (Guardian Legion) |
 | Vehemos (Guardian Legion) |
-| 37 - Etching Essence |
