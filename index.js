@@ -14,8 +14,8 @@ module.exports = function CardPresets(mod) {
 						switch (event.templateId) 
 						{
 							case 1000: // 1 BOSS
-								setPresetAndEffects(config.secondaryEffect, config.basicPreset -1)
-								mod.command.message('Hellgrammite - None Type');
+								setPresetAndEffects(29, config.magicalPreset -1)
+								mod.command.message('Hellgrammite - Magical Creature');
 								return true;
 							case 2000: // 2 BOSS
 								setPresetAndEffects(29, config.magicalPreset -1)
