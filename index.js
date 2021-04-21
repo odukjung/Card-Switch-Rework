@@ -2,7 +2,7 @@ const config = require('./config.json');
 let zoneId;
 
 module.exports = function CardPresets(mod) {
-        
+
 		mod.hook('S_SPAWN_NPC', 12, (event) => 
 		{
 	
@@ -194,6 +194,72 @@ module.exports = function CardPresets(mod) {
 								return true;
 						}
 					
+					// Anansha
+					case 29: 
+						
+						switch (event.templateId) 
+						{	
+							case 2001: // Anansha
+								setPresetAndEffects(29, config.magicalPreset -1)
+								mod.command.message('Anansha - Magical Creature');
+								return true;
+						}
+					
+					// Frygaras
+					case 34: 
+						
+						switch (event.templateId) 
+						{	
+							case 2002: // Frygaras
+								setPresetAndEffects(25, config.dragonPreset -1)
+								mod.command.message('Frygaras - Dragon');
+								return true;
+						}
+					
+					// Sabranak
+					case 34: 
+						
+						switch (event.templateId) 
+						{	
+							case 2003: // Sabranak
+								setPresetAndEffects(25, config.dragonPreset -1)
+								mod.command.message('Sabranak - Dragon');
+								return true;
+						}
+					
+					// Ortan
+					case 26: 
+						
+						switch (event.templateId) 
+						{	
+							case 5001: // Ortan
+								setPresetAndEffects(26, config.godPreset -1)
+								mod.command.message('Ortan - God');
+								return true;
+						}
+					
+					// Hazard
+					case 39: 
+						
+						switch (event.templateId) 
+						{	
+							case 501: // Hazard
+								setPresetAndEffects(29, config.magicalPreset -1)
+								mod.command.message('Hazard - Magical Creature');
+								return true;
+						}
+					
+					// Cerrus
+					case 51: 
+						
+						switch (event.templateId) 
+						{	
+							case 4001: // Cerrus
+								setPresetAndEffects(30, config.beastPreset -1)
+								mod.command.message('Cerrus - Beast');
+								return true;
+						}
+					
 					// Dreadreaper
 					case 622: 
 						
@@ -226,6 +292,7 @@ module.exports = function CardPresets(mod) {
 				}
 		});
 
+	/*
     mod.hook('C_USE_ITEM', 3, (event) => {
 
         if(config.fishing)
@@ -239,6 +306,7 @@ module.exports = function CardPresets(mod) {
         }
 
     });
+	*/
     
     function setPresetAndEffects(colId, presetId)
     {
