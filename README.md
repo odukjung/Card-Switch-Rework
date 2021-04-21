@@ -25,7 +25,7 @@
   | "Magical Creature"             : 7 |
   | "Magicaldevice Preset"         : 8 |
   | "Giant Preset"                 : 9 |
-  | "Basic Prese" or "Beast Prese" : 10 |
+  | "Basic Preset" or "Beast Preset" : 10 |
 
 ### Instructions
 * move flie in folder defs to \TeraToolbox\data\definitions
