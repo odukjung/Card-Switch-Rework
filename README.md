@@ -1,21 +1,31 @@
 ## card-switcher
 * Changes card presets and collection effect when entering a dungeon
 
+# Update
+- Support
+
+1. Anansha
+2. Frygaras
+3. Sabranak
+4. Ortan
+5. Hazard
+6. Cerrus
+
 ## Request
 * 10 page Preset Card
 * 35 Collection Effect or edit the number with the of collection effect you have
-  | Preset Card |
+  | Default Preset Card |
   | ------------------------ |
-  | "Ancestor Preset"      : 1 |
-  | "Azart Preset"         : 2 |
-  | "Demon Preset"         : 3 |
-  | "Argon Preset"         : 4 |
-  | "Basic Preset"         : 5 |
-  | "God Preset"           : 6 |
-  | "Magical Creature"     : 7 |
-  | "Magicaldevice Preset" : 8 |
-  | "Giant Preset"         : 9 |
-  | "Fish Preset"          : 10 |
+  | "Ancestor Preset"              : 1 |
+  | "Azart Preset"                 : 2 |
+  | "Demon Preset"                 : 3 |
+  | "Argon Preset"                 : 4 |
+  | "Dragon Preset"                : 5 |
+  | "God Preset"                   : 6 |
+  | "Magical Creature"             : 7 |
+  | "Magicaldevice Preset"         : 8 |
+  | "Giant Preset"                 : 9 |
+  | "Basic Prese" or "Beast Prese" : 10 |
 
 ### Instructions
 * move flie in folder defs to \TeraToolbox\data\definitions
@@ -42,3 +52,9 @@
 | Bahaar Sanctum |
 | Dreadreaper (Guardian Legion) |
 | Vehemos (Guardian Legion) |
+| Anansha (Civil Unrest Bam) |
+| Frygaras (Civil Unrest Bam) |
+| Sabranak (Civil Unrest Bam) |
+| Ortan (World Boss) |
+| Hazard (World Boss) |
+| Cerrus (World Boss) |
