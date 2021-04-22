@@ -11,6 +11,7 @@
 5. Hazard (Fix Done)
 6. Cerrus (Fix Done)
 7. Pit of Petrax (New)
+8. Lumikan Trial (New)
 
 ## Request
 * 10 page Preset Card
@@ -60,3 +61,4 @@
 | Hazard (World Boss) |
 | Cerrus (World Boss) |
 | Pit of Petrax |
+| Lumikan Trial |
