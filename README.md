@@ -4,12 +4,13 @@
 # Update
 - Support
 
-1. Anansha
-2. Frygaras
-3. Sabranak
-4. Ortan
-5. Hazard
-6. Cerrus
+1. Anansha (Fix Done)
+2. Frygaras (Fix Done)
+3. Sabranak (Fix Done)
+4. Ortan (Fix Done)
+5. Hazard (Fix Done)
+6. Cerrus (Fix Done)
+7. Pit of Petrax (New)
 
 ## Request
 * 10 page Preset Card
@@ -58,3 +59,4 @@
 | Ortan (World Boss) |
 | Hazard (World Boss) |
 | Cerrus (World Boss) |
+| Pit of Petrax |
