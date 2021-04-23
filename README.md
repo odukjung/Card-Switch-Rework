@@ -1,15 +1,21 @@
 ## card-switcher
 * Changes card presets and collection effect when entering a dungeon
 
+# Fix Bug
+- CR (Done)
+- Ortan (Done)
+- Hazard (Done)
+- Cerrus (Done)
+
 # Update
 - Support
 
-1. Anansha (Fix Done)
-2. Frygaras (Fix Done)
-3. Sabranak (Fix Done)
-4. Ortan (Fix Done)
-5. Hazard (Fix Done)
-6. Cerrus (Fix Done)
+1. Anansha
+2. Frygaras
+3. Sabranak
+4. Ortan
+5. Hazard
+6. Cerrus
 7. Pit of Petrax (New)
 8. Lumikan Trial (New)
 
