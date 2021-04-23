@@ -280,13 +280,13 @@ module.exports = function CardPresets(mod) {
 										}
 										
 								// Ortan
-								case 26: 
+								case 434: 
 									
 									switch (event.templateId) 
 										{	
-											case 5001: // Ortan
-												setPresetAndEffects(26, config.godPreset -1)
-												mod.command.message('<font color="#fff317">Ortan</font> - <font color="#fff317">God</font>');
+											case 7000: // Ortan
+												setPresetAndEffects(30, config.beastPreset -1)
+												mod.command.message('<font color="#fff317">Ortan</font> - <font color="#fff317">Beast</font>');
 												return true;
 										}
 							}
@@ -298,11 +298,11 @@ module.exports = function CardPresets(mod) {
 						switch (event.huntingZoneId)
 							{
 								// Cerrus
-								case 51: 
+								case 994: 
 									
 									switch (event.templateId) 
 									{	
-										case 4001: // Cerrus
+										case 1000: // Cerrus
 											setPresetAndEffects(30, config.beastPreset -1)
 											mod.command.message('<font color="#fff317">Cerrus</font> - <font color="#fff317">Beast</font>');
 											return true;
@@ -316,11 +316,11 @@ module.exports = function CardPresets(mod) {
 						switch (event.huntingZoneId)
 							{
 								// Hazard
-								case 39: 
+								case 777: 
 									
 									switch (event.templateId) 
 									{	
-										case 501: // Hazard
+										case 77730: // Hazard
 											setPresetAndEffects(29, config.magicalPreset -1)
 											mod.command.message('<font color="#fff317">Hazard</font> - <font color="#fff317">Magical Creature</font>');
 											return true;
@@ -373,7 +373,6 @@ module.exports = function CardPresets(mod) {
 
 	/*
     mod.hook('C_USE_ITEM', 3, (event) => {
-
         if(config.fishing)
         {
             config.rodID.forEach(e => {
@@ -383,7 +382,6 @@ module.exports = function CardPresets(mod) {
                 }
             });
         }
-
     });
 	*/
     
