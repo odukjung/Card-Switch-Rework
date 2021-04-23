@@ -75,21 +75,6 @@ module.exports = function CardPresets(mod) {
 								mod.command.message('<font color="#fff317">Manglemore</font> - <font color="#fff317">Giant</font>');
 								return true;
 						}
-					
-					// Commander Residence
-					case 3030: 
-						
-						switch (event.templateId) 
-						{
-							case 1000: // 1 BOSS
-								setPresetAndEffects(28, config.azartPreset -1)
-								mod.command.message('<font color="#fff317">Maknakh</font> - <font color="#fff317">Azart</font>');
-								return true;
-							case 3000: // 3 BOSS
-								setPresetAndEffects(31, config.magicaldevicePreset -1)
-								mod.command.message('<font color="#fff317">LB-1</font> - <font color="#fff317">Magical Device</font>');
-								return true;
-						}
 						
 					// Catalepticon
 					case 3104: 
@@ -351,7 +336,7 @@ module.exports = function CardPresets(mod) {
 					{
 						switch (event.huntingZoneId)
 							{
-								// Empowered Petrax
+								// Pit of Petrax
 								case 126: 
 									
 									switch (event.templateId) 
@@ -368,6 +353,30 @@ module.exports = function CardPresets(mod) {
 									}
 							}
 					}
+				
+				//Commander Residence
+				if(zoneId == 3030) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// Commander Residence
+								case 3030: 
+									
+									switch (event.templateId) 
+									{
+										case 1000: //Maknakh
+											setPresetAndEffects(28, config.azartPreset -1)
+											mod.command.message('<font color="#fff317">Maknakh</font> - <font color="#fff317">Azart</font>');
+											return true;
+										
+										case 2000: //LB-1
+											setPresetAndEffects(31, config.magicaldevicePreset -1)
+											mod.command.message('<font color="#fff317">LB-1</font> - <font color="#fff317">Magical Device</font>');
+											return true;
+									}
+							}
+					}
+				
 			});
 		});	
 
