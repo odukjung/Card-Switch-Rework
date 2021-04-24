@@ -225,14 +225,14 @@ module.exports = function CardPresets(mod) {
 					{
 						switch (event.huntingZoneId)
 							{
-								// Anansha
-								case 29: 
+								// Sabranak
+								case 34: 
 						
 									switch (event.templateId) 
 										{	
-											case 2001: // Anansha
-											setPresetAndEffects(29, config.magicalPreset -1)
-											mod.command.message('<font color="#fff317">Anansha</font> - <font color="#fff317">Magical Creature</font>');
+											case 2003: // Sabranak
+											setPresetAndEffects(25, config.dragonPreset -1)
+											mod.command.message('<font color="#fff317">Sabranak</font> - <font color="#fff317">Dragon</font>');
 											return true;
 										}
 								// Frygaras
@@ -253,14 +253,14 @@ module.exports = function CardPresets(mod) {
 					{
 						switch (event.huntingZoneId)
 							{
-								// Sabranak
-								case 34: 
+								// Anansha
+								case 29: 
 						
 									switch (event.templateId) 
 										{	
-											case 2003: // Sabranak
-											setPresetAndEffects(25, config.dragonPreset -1)
-											mod.command.message('<font color="#fff317">Sabranak</font> - <font color="#fff317">Dragon</font>');
+											case 2001: // Anansha
+											setPresetAndEffects(29, config.magicalPreset -1)
+											mod.command.message('<font color="#fff317">Anansha</font> - <font color="#fff317">Magical Creature</font>');
 											return true;
 										}
 										
