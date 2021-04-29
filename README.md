@@ -1,6 +1,11 @@
 ## card-switcher
 * Changes card presets and collection effect when entering a dungeon
 
+# OP Code
+C_CHANGE_CARD_PRESET 36656
+C_DEACTIVATE_CARD_COMBINE_LIST 20541
+C_ACTIVATE_CARD_COMBINE_LIST 30699
+
 # Fix Bug
 - CR (Done)
 - Ortan (Done)
