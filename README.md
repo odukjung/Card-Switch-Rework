@@ -16,6 +16,7 @@ C_ACTIVATE_CARD_COMBINE_LIST 30699
 - Support
 
 1. RK-9 Rampaging
+2. Damned Citadel
 
 
 ## Request
