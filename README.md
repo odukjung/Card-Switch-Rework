@@ -10,14 +10,8 @@
 # Update
 - Support
 
-1. Anansha
-2. Frygaras
-3. Sabranak
-4. Ortan
-5. Hazard
-6. Cerrus
-7. Pit of Petrax (New)
-8. Lumikan Trial (New)
+1. RK-9 Rampaging
+
 
 ## Request
 * 10 page Preset Card
