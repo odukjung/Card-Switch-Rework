@@ -197,7 +197,16 @@ module.exports = function CardPresets(mod) {
 								mod.command.message('<font color="#fff317">Rampaging RK-9</font> - <font color="#fff317">Magical Device</font>');
 								return true;
 						}
-					
+					//Damned Citadel
+					case 3041: 
+						
+						switch (event.templateId) 
+						{
+							case 1000: // Harnovog
+								setPresetAndEffects(32, config.demonPreset -1)
+								mod.command.message('<font color="#fff317">Harnovog</font> - <font color="#fff317">Demon</font>');
+								return true;
+						}
 					/*
 					// Default
 					default : 
