@@ -178,6 +178,25 @@ module.exports = function CardPresets(mod) {
 								mod.command.message('<font color="#fff317">Bahaar Phase 2</font> - <font color="#fff317">God</font>');
 								return true;
 						}
+						
+					// RK-9 Rampaging
+					case 3034: 
+						
+						switch (event.templateId) 
+						{
+							case 1000: //Ventarun
+								setPresetAndEffects(31, config.magicaldevicePreset -1)
+								mod.command.message('<font color="#fff317">Ventarun</font> - <font color="#fff317">Magical Device</font>');
+								return true;
+							case 2000: //Hexapleon
+								setPresetAndEffects(31, config.magicaldevicePreset -1)
+								mod.command.message('<font color="#fff317">Hexapleon</font> - <font color="#fff317">Magical Device</font>');
+								return true;
+							case 3000: //Rampaging RK-9
+								setPresetAndEffects(31, config.magicaldevicePreset -1)
+								mod.command.message('<font color="#fff317">Rampaging RK-9</font> - <font color="#fff317">Magical Device</font>');
+								return true;
+						}
 					
 					/*
 					// Default
