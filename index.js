@@ -206,6 +206,10 @@ module.exports = function CardPresets(mod) {
 								setPresetAndEffects(32, config.demonPreset -1)
 								mod.command.message('<font color="#fff317">Harnovog</font> - <font color="#fff317">Demon</font>');
 								return true;
+							case 2000: // Harnovog
+								setPresetAndEffects(32, config.demonPreset -1)
+								mod.command.message('<font color="#fff317">Harnovog</font> - <font color="#fff317">Demon</font>');
+								return true;
 						}
 					/*
 					// Default
