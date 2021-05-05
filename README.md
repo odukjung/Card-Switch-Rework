@@ -7,10 +7,8 @@
 - C_ACTIVATE_CARD_COMBINE_LIST 30699
 
 # Fix Bug
-- CR (Done)
-- Ortan (Done)
-- Hazard (Done)
-- Cerrus (Done)
+- RK-9 Rampaging (Done)
+- Bahaar Sanctum (Done)
 
 # Update
 - Support
