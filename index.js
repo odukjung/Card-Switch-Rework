@@ -164,39 +164,6 @@ module.exports = function CardPresets(mod) {
 								return true;
 						}
 						
-					// Bahaar Sanctum
-					case 444: 
-						
-						switch (event.templateId) 
-						{
-							case 1000: // Phase 1
-								setPresetAndEffects(26, config.godPreset -1)
-								mod.command.message('<font color="#fff317">Bahaar Phase 1</font> - <font color="#fff317">God</font>');
-								return true;
-							case 2000: // Phase 2
-								setPresetAndEffects(26, config.godPreset -1)
-								mod.command.message('<font color="#fff317">Bahaar Phase 2</font> - <font color="#fff317">God</font>');
-								return true;
-						}
-						
-					// RK-9 Rampaging
-					case 3034: 
-						
-						switch (event.templateId) 
-						{
-							case 1000: //Ventarun
-								setPresetAndEffects(31, config.magicaldevicePreset -1)
-								mod.command.message('<font color="#fff317">Ventarun</font> - <font color="#fff317">Magical Device</font>');
-								return true;
-							case 2000: //Hexapleon
-								setPresetAndEffects(31, config.magicaldevicePreset -1)
-								mod.command.message('<font color="#fff317">Hexapleon</font> - <font color="#fff317">Magical Device</font>');
-								return true;
-							case 3000: //Rampaging RK-9
-								setPresetAndEffects(31, config.magicaldevicePreset -1)
-								mod.command.message('<font color="#fff317">Rampaging RK-9</font> - <font color="#fff317">Magical Device</font>');
-								return true;
-						}
 					//Damned Citadel
 					case 3041: 
 						
@@ -408,7 +375,54 @@ module.exports = function CardPresets(mod) {
 									}
 							}
 					}
-				
+					
+				// Bahaar Sanctum
+				if(zoneId == 9044) 
+					{
+						switch (event.huntingZoneId)
+							{	
+								// Bahaar Sanctum
+								case 444: 
+									
+									switch (event.templateId) 
+									{
+										case 1000: // Phase 1
+											setPresetAndEffects(26, config.godPreset -1)
+											mod.command.message('<font color="#fff317">Bahaar Phase 1</font> - <font color="#fff317">God</font>');
+											return true;
+										case 2000: // Phase 2
+											setPresetAndEffects(26, config.godPreset -1)
+											mod.command.message('<font color="#fff317">Bahaar Phase 2</font> - <font color="#fff317">God</font>');
+											return true;
+									}
+							}
+					}
+					
+				// RK-9 Rampaging
+				if(zoneId == 3034) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// RK-9 Rampaging
+								case 3034: 
+									
+									switch (event.templateId) 
+									{
+										case 1000: //Ventarun
+											setPresetAndEffects(31, config.magicaldevicePreset -1)
+											mod.command.message('<font color="#fff317">Ventarun</font> - <font color="#fff317">Magical Device</font>');
+											return true;
+										case 2000: //Hexapleon
+											setPresetAndEffects(31, config.magicaldevicePreset -1)
+											mod.command.message('<font color="#fff317">Hexapleon</font> - <font color="#fff317">Magical Device</font>');
+											return true;
+										case 3000: //Rampaging RK-9
+											setPresetAndEffects(31, config.magicaldevicePreset -1)
+											mod.command.message('<font color="#fff317">Rampaging RK-9</font> - <font color="#fff317">Magical Device</font>');
+											return true;
+									}
+							}
+					}
 			});
 		});	
 
