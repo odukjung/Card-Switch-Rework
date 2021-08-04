@@ -8,20 +8,6 @@ module.exports = function CardPresets(mod) {
 	
 			switch (event.huntingZoneId)
 				{
-					// Gossamer Vault (Easy)
-					case 3101: 
-						
-						switch (event.templateId) 
-						{
-							case 1000: // 1 BOSS
-								setPresetAndEffects(29, config.magicalPreset -1)
-								mod.command.message('<font color="#fff317">Hellgrammite</font> - <font color="#fff317">Magical Creature</font>');
-								return true;
-							case 2001: // 2 BOSS
-								setPresetAndEffects(29, config.magicalPreset -1)
-								mod.command.message('<font color="#fff317">Gossamer Regent</font> - <font color="#fff317">Magical Creature</font>');
-								return true;
-						}
 					
 					// Akalath Quarantine
 					case 3023: 
@@ -178,6 +164,21 @@ module.exports = function CardPresets(mod) {
 								mod.command.message('<font color="#fff317">Harnovog</font> - <font color="#fff317">Demon</font>');
 								return true;
 						}
+						
+					//Dark Reach Citadel
+					case 3044: 
+						
+						switch (event.templateId) 
+						{
+							case 1000: // Harnovog
+								setPresetAndEffects(32, config.demonPreset -1)
+								mod.command.message('<font color="#fff317">Harnovog</font> - <font color="#fff317">Demon</font>');
+								return true;
+							case 2000: // Harnovog
+								setPresetAndEffects(32, config.demonPreset -1)
+								mod.command.message('<font color="#fff317">Harnovog</font> - <font color="#fff317">Demon</font>');
+								return true;
+						}
 					/*
 					// Default
 					default : 
@@ -276,6 +277,54 @@ module.exports = function CardPresets(mod) {
 							}
 					}
 				
+				// Gossamer Vault (Easy)
+				if(zoneId == 3101) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// Gossamer Vault (Easy)
+								case 3101: 
+						
+									switch (event.templateId) 
+										{	
+											case 1000: // 1 BOSS
+											setPresetAndEffects(29, config.magicalPreset -1)
+											mod.command.message('<font color="#fff317">Hellgrammite</font> - <font color="#fff317">Magical Creature</font>');
+											return true;
+											case 2001: // 2 BOSS
+											setPresetAndEffects(29, config.magicalPreset -1)
+											mod.command.message('<font color="#fff317">Gossamer Regent</font> - <font color="#fff317">Magical Creature</font>');
+											return true;
+										}
+							}
+					}
+				
+				// Grotto of Lost Souls (Hard)
+				if(zoneId == 9982) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// Gossamer Vault (Easy)
+								case 982: 
+						
+									switch (event.templateId) 
+										{	
+											case 1000: // 1 BOSS
+											setPresetAndEffects(29, config.magicalPreset -1)
+											mod.command.message('<font color="#fff317">Nightmare Nedra</font> - <font color="#fff317">Magical Creature</font>');
+											return true;
+											case 2000: // 2 BOSS
+											setPresetAndEffects(29, config.magicalPreset -1)
+											mod.command.message('<font color="#fff317">Nightmare Ptakum</font> - <font color="#fff317">Magical Creature</font>');
+											return true;
+											case 3000: // 3 BOSS
+											setPresetAndEffects(25, config.dragonPreset -1)
+											mod.command.message('<font color="#fff317">Nightmare Kylos</font> - <font color="#fff317">Dragon</font>');
+											return true;
+										}
+							}
+					}
+				
 				//Lorcada
 				if(zoneId == 7022) 
 					{
@@ -325,6 +374,42 @@ module.exports = function CardPresets(mod) {
 										case 1000: //Lumikan Trial
 											setPresetAndEffects(28, config.azartPreset -1)
 											mod.command.message('<font color="#fff317">Lumikan Trial</font> - <font color="#fff317">Azart</font>');
+											return true;
+									}
+							}
+					}
+				
+				//Fusion Laboratory
+				if(zoneId == 3105) 
+					{
+						switch (event.huntingZoneId)
+							{
+								//Fusion Laboratory
+								case 3105: 
+									
+									switch (event.templateId) 
+									{	
+										case 1000: //Lumikan Trial
+											setPresetAndEffects(28, config.azartPreset -1)
+											mod.command.message('<font color="#fff317">Rogash</font> - <font color="#fff317">Azart</font>');
+											return true;
+									}
+							}
+					}
+				
+				//Cursed Fusion Laboratory
+				if(zoneId == 3205) 
+					{
+						switch (event.huntingZoneId)
+							{
+								//Cursed Fusion Laboratory
+								case 3205: 
+									
+									switch (event.templateId) 
+									{	
+										case 1000: //Cursed Fusion Laboratory
+											setPresetAndEffects(28, config.azartPreset -1)
+											mod.command.message('<font color="#fff317">Rampaging Rogash</font> - <font color="#fff317">Azart</font>');
 											return true;
 									}
 							}
