@@ -68,7 +68,7 @@ module.exports = function CardPresets(mod) {
 						switch (event.templateId) 
 						{
 							case 1000: // 1 BOSS
-								setPresetAndEffects(28, config.azartPreset -1)
+								setPresetAndEffects(37, config.azartPreset -1)
 								mod.command.message('<font color="#fff317">Lumikan</font> - <font color="#fff317">Azart</font>');
 								return true;
 						}
@@ -79,7 +79,7 @@ module.exports = function CardPresets(mod) {
 						switch (event.templateId) 
 						{
 							case 1000: // 1 BOSS
-								setPresetAndEffects(28, config.azartPreset -1)
+								setPresetAndEffects(37, config.azartPreset -1)
 								mod.command.message('<font color="#fff317">Nightmare Lumikan</font> - <font color="#fff317">Azart</font>');
 								return true;
 						}
@@ -112,7 +112,7 @@ module.exports = function CardPresets(mod) {
 						switch (event.templateId) 
 						{
 							case 1000: // 1 BOSS
-								setPresetAndEffects(28, config.azartPreset -1)
+								setPresetAndEffects(37, config.azartPreset -1)
 								mod.command.message('<font color="#fff317">Commander Kalligar</font> - <font color="#fff317">Azart</font>');
 								return true;
 						}
@@ -372,7 +372,7 @@ module.exports = function CardPresets(mod) {
 									switch (event.templateId) 
 									{	
 										case 1000: //Lumikan Trial
-											setPresetAndEffects(28, config.azartPreset -1)
+											setPresetAndEffects(37, config.azartPreset -1)
 											mod.command.message('<font color="#fff317">Lumikan Trial</font> - <font color="#fff317">Azart</font>');
 											return true;
 									}
@@ -390,7 +390,7 @@ module.exports = function CardPresets(mod) {
 									switch (event.templateId) 
 									{	
 										case 1000: //Lumikan Trial
-											setPresetAndEffects(28, config.azartPreset -1)
+											setPresetAndEffects(37, config.azartPreset -1)
 											mod.command.message('<font color="#fff317">Rogash</font> - <font color="#fff317">Azart</font>');
 											return true;
 									}
@@ -408,7 +408,7 @@ module.exports = function CardPresets(mod) {
 									switch (event.templateId) 
 									{	
 										case 1000: //Cursed Fusion Laboratory
-											setPresetAndEffects(28, config.azartPreset -1)
+											setPresetAndEffects(37, config.azartPreset -1)
 											mod.command.message('<font color="#fff317">Rampaging Rogash</font> - <font color="#fff317">Azart</font>');
 											return true;
 									}
@@ -449,7 +449,7 @@ module.exports = function CardPresets(mod) {
 									switch (event.templateId) 
 									{
 										case 1000: //Maknakh
-											setPresetAndEffects(28, config.azartPreset -1)
+											setPresetAndEffects(37, config.azartPreset -1)
 											mod.command.message('<font color="#fff317">Maknakh</font> - <font color="#fff317">Azart</font>');
 											return true;
 										
