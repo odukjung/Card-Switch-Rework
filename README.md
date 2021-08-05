@@ -5,14 +5,14 @@
 Link : https://github.com/odukjung/Tera-Def-Op-code
 
 # Fix Bug
-- RK-9 Rampaging (Done)
-- Bahaar Sanctum (Done)
+- 
 
 # Update
 - Support
 
-1. RK-9 Rampaging
-2. Damned Citadel
+1. Grotto of Lost Souls (Hard)
+2. Damned Citadel (Hard)
+3. Fusion Laboratory
 
 
 ## Request
