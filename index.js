@@ -304,18 +304,18 @@ module.exports = function CardPresets(mod) {
 					{
 						switch (event.huntingZoneId)
 							{
-								// Gossamer Vault (Easy)
+								// Grotto of Lost Souls (Hard)
 								case 982: 
 						
 									switch (event.templateId) 
 										{	
 											case 1000: // 1 BOSS
-											setPresetAndEffects(29, config.magicalPreset -1)
-											mod.command.message('<font color="#fff317">Nightmare Nedra</font> - <font color="#fff317">Magical Creature</font>');
+											setPresetAndEffects(32, config.demonPreset -1)
+											mod.command.message('<font color="#fff317">Nightmare Nedra</font> - <font color="#fff317">Demon</font>');
 											return true;
 											case 2000: // 2 BOSS
-											setPresetAndEffects(29, config.magicalPreset -1)
-											mod.command.message('<font color="#fff317">Nightmare Ptakum</font> - <font color="#fff317">Magical Creature</font>');
+											setPresetAndEffects(32, config.demonPreset -1)
+											mod.command.message('<font color="#fff317">Nightmare Ptakum</font> - <font color="#fff317">Demon</font>');
 											return true;
 											case 3000: // 3 BOSS
 											setPresetAndEffects(25, config.dragonPreset -1)
@@ -539,7 +539,7 @@ module.exports = function CardPresets(mod) {
 
     function clearEffects()
     {
-        for (let i = 0; i < 36; i++) {
+        for (let i = 0; i < 37; i++) {
             
             mod.toServer('C_DEACTIVATE_CARD_COMBINE_LIST', 1, {
                 id: i
