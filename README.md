@@ -17,7 +17,7 @@ Link : https://github.com/odukjung/Tera-Def-Op-code
 
 ## Request
 * 10 page Preset Card
-* 35 Collection Effect or edit the number with the of collection effect you have
+* 37 Collection Effect or edit the number with the of collection effect you have
   | Default Preset Card |
   | ------------------------ |
   | "Ancestor Preset"              : 1 |
