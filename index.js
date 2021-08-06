@@ -2,215 +2,6 @@ const config = require('./config.json');
 let zoneId;
 
 module.exports = function CardPresets(mod) {
-
-		mod.hook('S_SPAWN_NPC', 12, (event) => 
-		{
-	
-			switch (event.huntingZoneId)
-				{
-					
-					// Akalath Quarantine
-					case 3023: 
-						
-						switch (event.templateId) 
-						{
-							case 1000: // 1 BOSS
-								setPresetAndEffects(24, config.argonPreset -1)
-								mod.command.message('<font color="#fff317">Akalath Travan</font> - <font color="#fff317">Argon</font>');
-								return true;
-							case 2000: // 2 BOSS
-								setPresetAndEffects(24, config.argonPreset -1)
-								mod.command.message('<font color="#fff317">Akalath Kashir</font> - <font color="#fff317">Argon</font>');
-								return true;
-						}
-					
-					// Ruinous Manor (Normal)
-					case 770: 
-						
-						switch (event.templateId) 
-						{
-							case 1000: // 1 BOSS
-								setPresetAndEffects(29, config.magicalPreset -1)
-								mod.command.message('<font color="#fff317">Resurrected Atrocitas</font> - <font color="#fff317">Magical Creature</font>');
-								return true;
-								
-							case 3000: // 3 BOSS
-								setPresetAndEffects(32, config.demonPreset -1)
-								mod.command.message('<font color="#fff317">Lachelith</font> - <font color="#fff317">Demon</font>');
-								return true;
-						}
-					
-					// Ruinous Manor (Hard)
-					case 970: 
-						
-						switch (event.templateId) 
-						{
-							case 3000: // 3 BOSS
-								setPresetAndEffects(32, config.demonPreset -1)
-								mod.command.message('<font color="#fff317">Nightmare Lachelith</font> - <font color="#fff317">Demon</font>');
-								return true;
-						}
-					
-					// Manglemire
-					case 470: 
-						
-						switch (event.templateId) 
-						{
-							case 800: // 1 BOSS
-								setPresetAndEffects(35, config.giantPreset -1)
-								mod.command.message('<font color="#fff317">Manglemore</font> - <font color="#fff317">Giant</font>');
-								return true;
-						}
-						
-					// Catalepticon
-					case 3104: 
-						
-						switch (event.templateId) 
-						{
-							case 1000: // 1 BOSS
-								setPresetAndEffects(37, config.azartPreset -1)
-								mod.command.message('<font color="#fff317">Lumikan</font> - <font color="#fff317">Azart</font>');
-								return true;
-						}
-					
-					// Catalepticon (Hard)
-					case 3204: 
-						
-						switch (event.templateId) 
-						{
-							case 1000: // 1 BOSS
-								setPresetAndEffects(37, config.azartPreset -1)
-								mod.command.message('<font color="#fff317">Nightmare Lumikan</font> - <font color="#fff317">Azart</font>');
-								return true;
-						}
-						
-					// Killing Grounds
-					case 3106: 
-						
-						switch (event.templateId) 
-						{
-							case 1000: // 1 BOSS
-								setPresetAndEffects(33, config.ancestorPreset -1)
-								mod.command.message('<font color="#fff317">Gardan</font> - <font color="#fff317">Ancestor</font>');
-								return true;
-						}
-					
-					// Killing Grounds (Hard)
-					case 3206: 
-						
-						switch (event.templateId) 
-						{
-							case 1000: // 1 BOSS
-								setPresetAndEffects(33, config.ancestorPreset -1)
-								mod.command.message('<font color="#fff317">Nightmare Gardan</font> - <font color="#fff317">Ancestor</font>');
-								return true;
-						}
-						
-					// Draakon Arena
-					case 3102: 
-						
-						switch (event.templateId) 
-						{
-							case 1000: // 1 BOSS
-								setPresetAndEffects(37, config.azartPreset -1)
-								mod.command.message('<font color="#fff317">Commander Kalligar</font> - <font color="#fff317">Azart</font>');
-								return true;
-						}
-					
-					// Forbidden Arena [Undying Warlord]
-					case 3103: 
-						
-						switch (event.templateId) 
-						{
-							case 1000: // 1 BOSS
-								setPresetAndEffects(33, config.ancestorPreset -1)
-								mod.command.message('<font color="#fff317">Undying Warlord</font> - <font color="#fff317">Ancestor</font>');
-								return true;
-						}
-					
-					// Corrupted Skynest
-					case 3026: 
-						
-						switch (event.templateId) 
-						{
-							case 1000: // 1 BOSS
-								setPresetAndEffects(24, config.argonPreset -1)
-								mod.command.message('<font color="#fff317">Kelsaik</font> - <font color="#fff317">Argon</font>');
-								return true;
-						}
-					
-					// Corrupted Skynest (Hard)
-					case 3126: 
-						
-						switch (event.templateId) 
-						{
-							case 1000: // 1 BOSS
-								setPresetAndEffects(24, config.argonPreset -1)
-								mod.command.message('<font color="#fff317">Nightmare Kelsaik</font> - <font color="#fff317">Argon</font>');
-								return true;
-						}
-						
-					//Damned Citadel
-					case 3041: 
-						
-						switch (event.templateId) 
-						{
-							case 1000: // Harnovog
-								setPresetAndEffects(32, config.demonPreset -1)
-								mod.command.message('<font color="#fff317">Harnovog</font> - <font color="#fff317">Demon</font>');
-								return true;
-							case 2000: // Harnovog
-								setPresetAndEffects(32, config.demonPreset -1)
-								mod.command.message('<font color="#fff317">Harnovog</font> - <font color="#fff317">Demon</font>');
-								return true;
-						}
-						
-					//Dark Reach Citadel
-					case 3044: 
-						
-						switch (event.templateId) 
-						{
-							case 1000: // Harnovog
-								setPresetAndEffects(32, config.demonPreset -1)
-								mod.command.message('<font color="#fff317">Harnovog</font> - <font color="#fff317">Demon</font>');
-								return true;
-							case 2000: // Harnovog
-								setPresetAndEffects(32, config.demonPreset -1)
-								mod.command.message('<font color="#fff317">Harnovog</font> - <font color="#fff317">Demon</font>');
-								return true;
-						}
-					/*
-					// Default
-					default : 
-						
-						setPresetAndEffects(config.secondaryEffect, config.basicPreset -1)
-						return true;
-					*/
-					
-					// Dreadreaper
-					case 622: 
-						
-						switch (event.templateId) 
-						{	
-							case 1000: // Dreadreaper
-								setPresetAndEffects(29, config.magicalPreset -1)
-								mod.command.message('<font color="#fff317">Dreadreaper</font> - <font color="#fff317">Magical Creature</font>');
-								return true;
-						}
-					
-					// Vehemos
-					case 620: 
-						
-						switch (event.templateId) 
-						{	
-							case 1000: // Vehemos
-								setPresetAndEffects(35, config.giantPreset -1)
-								mod.command.message('<font color="#fff317">Vehemos</font> - <font color="#fff317">Giant</font>');
-								return true;
-						}
-				}
-		});		
-		
 		
 		mod.hook('S_LOAD_TOPO', 3, (event) => 
 		{
@@ -220,6 +11,250 @@ module.exports = function CardPresets(mod) {
 			mod.hook('S_SPAWN_NPC', 12, (event) => 
 					
 			{
+				
+				// Ghillieglade
+				if(zoneId == 9713) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// Ghillieglade
+								case 713: 
+									
+									switch (event.templateId) 
+									{	
+										case 81301: // Ghillieglade
+											setPresetAndEffects(config.secondaryEffect, config.basicPreset -1)
+											mod.command.message('<font color="#fff317">Ghillieglade</font> - <font color="#fff317">None Type</font>');
+											return true;
+									}
+							}
+					}
+				
+				// Akalath Quarantine
+				if(zoneId == 3023) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// Akalath Quarantine
+								case 3023: 
+									
+									switch (event.templateId) 
+									{
+										case 1000: // 1 BOSS
+											setPresetAndEffects(24, config.argonPreset -1)
+											mod.command.message('<font color="#fff317">Akalath Travan</font> - <font color="#fff317">Argon</font>');
+											return true;
+										case 2000: // 2 BOSS
+											setPresetAndEffects(24, config.argonPreset -1)
+											mod.command.message('<font color="#fff317">Akalath Kashir</font> - <font color="#fff317">Argon</font>');
+											return true;
+									}
+							}
+					}
+				
+				// Ruinous Manor (Normal)
+				if(zoneId == 9770) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// Ruinous Manor (Hard)
+								case 770: 
+									
+									switch (event.templateId) 
+									{	
+										case 1000: // 1 BOSS
+											setPresetAndEffects(29, config.magicalPreset -1)
+											mod.command.message('<font color="#fff317">Resurrected Atrocitas</font> - <font color="#fff317">Magical Creature</font>');
+											return true;
+											
+										case 3000: // 3 BOSS
+											setPresetAndEffects(32, config.demonPreset -1)
+											mod.command.message('<font color="#fff317">Lachelith</font> - <font color="#fff317">Demon</font>');
+											return true;
+									}
+							}
+					}
+				
+				// Ruinous Manor (Hard)
+				if(zoneId == 9970) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// Ruinous Manor (Hard)
+								case 970: 
+									
+									switch (event.templateId) 
+									{	
+										case 3000: // 1 BOSS
+											setPresetAndEffects(35, config.giantPreset -1)
+											mod.command.message('<font color="#fff317">Manglemore</font> - <font color="#fff317">Giant</font>');
+											return true;
+									}
+							}
+					}
+				
+				// Manglemire
+				if(zoneId == 9070) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// Manglemire
+								case 470: 
+									
+									switch (event.templateId) 
+									{	
+										case 800: // 1 BOSS
+											setPresetAndEffects(35, config.giantPreset -1)
+											mod.command.message('<font color="#fff317">Manglemore</font> - <font color="#fff317">Giant</font>');
+											return true;
+									}
+							}
+					}
+				
+				// Catalepticon
+				if(zoneId == 3104) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// Catalepticon
+								case 3104: 
+									
+									switch (event.templateId) 
+									{	
+										case 1000: // 1 BOSS
+											setPresetAndEffects(37, config.azartPreset -1)
+											mod.command.message('<font color="#fff317">Lumikan</font> - <font color="#fff317">Azart</font>');
+											return true;
+									}
+							}
+					}
+				
+				// Catalepticon (Hard)
+				if(zoneId == 3204) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// Catalepticon (Hard)
+								case 3204: 
+									
+									switch (event.templateId) 
+									{	
+										case 1000: // 1 BOSS
+											setPresetAndEffects(37, config.azartPreset -1)
+											mod.command.message('<font color="#fff317">Nightmare Lumikan</font> - <font color="#fff317">Azart</font>');
+											return true;
+									}
+							}
+					}
+				
+				// Killing Grounds
+				if(zoneId == 3106) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// Killing Grounds
+								case 3106: 
+									
+									switch (event.templateId) 
+									{	
+										case 1000: // 1 BOSS
+										setPresetAndEffects(33, config.ancestorPreset -1)
+										mod.command.message('<font color="#fff317">Gardan</font> - <font color="#fff317">Ancestor</font>');
+										return true;
+									}
+							}
+					}
+				
+				// Killing Grounds (Hard)
+				if(zoneId == 3206) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// Killing Grounds (Hard)
+								case 3206: 
+									
+									switch (event.templateId) 
+									{	
+										case 1000: // 1 BOSS
+										setPresetAndEffects(33, config.ancestorPreset -1)
+										mod.command.message('<font color="#fff317">Nightmare Gardan</font> - <font color="#fff317">Ancestor</font>');
+										return true;
+									}
+							}
+					}
+				
+				// Draakon Arena
+				if(zoneId == 3102) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// Draakon Arena
+								case 3102: 
+									
+									switch (event.templateId) 
+									{	
+										case 1000: // 1 BOSS
+										setPresetAndEffects(37, config.azartPreset -1)
+										mod.command.message('<font color="#fff317">Commander Kalligar</font> - <font color="#fff317">Azart</font>');
+										return true;
+									}
+							}
+					}
+				
+				// Forbidden Arena [Undying Warlord]
+				if(zoneId == 3103) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// Forbidden Arena [Undying Warlord]
+								case 3103: 
+									
+									switch (event.templateId) 
+									{	
+										case 1000: // 1 BOSS
+										setPresetAndEffects(33, config.ancestorPreset -1)
+										mod.command.message('<font color="#fff317">Undying Warlord</font> - <font color="#fff317">Ancestor</font>');
+										return true;
+									}
+							}
+					}
+				
+				// Corrupted Skynest (Hard)
+				if(zoneId == 3126) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// Corrupted Skynest (Hard)
+								case 3126: 
+									
+									switch (event.templateId) 
+									{	
+										case 1000: // 1 BOSS
+										setPresetAndEffects(24, config.argonPreset -1)
+										mod.command.message('<font color="#fff317">Nightmare Kelsaik</font> - <font color="#fff317">Argon</font>');
+										return true;
+									}
+							}
+					}
+				
+				// Corrupted Skynest
+				if(zoneId == 3026) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// Corrupted Skynest
+								case 3026: 
+									
+									switch (event.templateId) 
+									{	
+										case 1000: // 1 BOSS
+										setPresetAndEffects(24, config.argonPreset -1)
+										mod.command.message('<font color="#fff317">Kelsaik</font> - <font color="#fff317">Argon</font>');
+										return true;
+									}
+							}
+					}
+				
 				//Frost Reach
 				if(zoneId == 7012) 
 					{
@@ -272,6 +307,17 @@ module.exports = function CardPresets(mod) {
 											case 7000: // Ortan
 												setPresetAndEffects(30, config.beastPreset -1)
 												mod.command.message('<font color="#fff317">Ortan</font> - <font color="#fff317">Beast</font>');
+												return true;
+										}
+										
+								// Dreadreaper
+								case 622: 
+									
+									switch (event.templateId) 
+										{	
+											case 1000: // Dreadreaper
+												setPresetAndEffects(29, config.magicalPreset -1)
+												mod.command.message('<font color="#fff317">Dreadreaper</font> - <font color="#fff317">Magical Creature</font>');
 												return true;
 										}
 							}
@@ -343,6 +389,24 @@ module.exports = function CardPresets(mod) {
 							}
 					}
 				
+				// Vehemos
+				if(zoneId == 7015) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// Vehemos
+								case 620: 
+									
+									switch (event.templateId) 
+									{	
+										case 1000: // Vehemos
+										setPresetAndEffects(35, config.giantPreset -1)
+										mod.command.message('<font color="#fff317">Vehemos</font> - <font color="#fff317">Giant</font>');
+										return true;
+									}
+							}
+					}
+
 				//Val Palrada
 				if(zoneId == 7013) 
 					{
@@ -374,6 +438,24 @@ module.exports = function CardPresets(mod) {
 										case 1000: //Lumikan Trial
 											setPresetAndEffects(37, config.azartPreset -1)
 											mod.command.message('<font color="#fff317">Lumikan Trial</font> - <font color="#fff317">Azart</font>');
+											return true;
+									}
+							}
+					}
+				
+				// Killing Grounds Trial
+				if(zoneId == 3042) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// /Killing Grounds Trial
+								case 3042: 
+									
+									switch (event.templateId) 
+									{	
+										case 1000: //Killing Grounds Trial
+											setPresetAndEffects(33, config.ancestorPreset -1)
+											mod.command.message('<font color="#fff317">Gardan Trial</font> - <font color="#fff317">Ancestor</font>');
 											return true;
 									}
 							}
@@ -482,7 +564,51 @@ module.exports = function CardPresets(mod) {
 									}
 							}
 					}
-					
+				
+				//Damned Citadel
+				if(zoneId == 3041) 
+					{
+						switch (event.huntingZoneId)
+							{	
+								//Damned Citadel
+								case 3041: 
+									
+									switch (event.templateId) 
+									{
+										case 1000: // Harnovog
+											setPresetAndEffects(32, config.demonPreset -1)
+											mod.command.message('<font color="#fff317">Harnovog</font> - <font color="#fff317">Demon</font>');
+											return true;
+										case 2000: // Harnovog
+											setPresetAndEffects(32, config.demonPreset -1)
+											mod.command.message('<font color="#fff317">Harnovog</font> - <font color="#fff317">Demon</font>');
+											return true;
+									}
+							}
+					}
+				
+				//Dark Reach Citadel
+				if(zoneId == 3044) 
+					{
+						switch (event.huntingZoneId)
+							{	
+								///Dark Reach Citadel
+								case 3044: 
+									
+									switch (event.templateId) 
+									{
+										case 1000: // Harnovog
+											setPresetAndEffects(32, config.demonPreset -1)
+											mod.command.message('<font color="#fff317">Harnovog</font> - <font color="#fff317">Demon</font>');
+											return true;
+										case 2000: // Harnovog
+											setPresetAndEffects(32, config.demonPreset -1)
+											mod.command.message('<font color="#fff317">Harnovog</font> - <font color="#fff317">Demon</font>');
+											return true;
+									}
+							}
+					}
+				
 				// RK-9 Rampaging
 				if(zoneId == 3034) 
 					{
