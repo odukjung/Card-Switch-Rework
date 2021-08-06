@@ -2,10 +2,11 @@
 * Changes card presets and collection effect when entering a dungeon
 
 # Opcode for EU
+How to Add Opcode
 Link : https://github.com/odukjung/Tera-Def-Op-code
 
 # Fix Bug
-- 
+- Azart set effect is change to new set effect
 
 # Update
 - Support
