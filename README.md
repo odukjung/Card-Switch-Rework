@@ -7,6 +7,7 @@ Link : https://github.com/odukjung/Tera-Def-Op-code
 
 # Fix Bug
 - Azart set effect is change to new set effect
+- Fix set effect
 
 # Update
 - Support
