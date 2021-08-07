@@ -508,12 +508,12 @@ module.exports = function CardPresets(mod) {
 									switch (event.templateId) 
 									{	
 										case 110: // Empowered Petrax
-											setPresetAndEffects(config.secondaryEffect, config.basicPreset -1)
+											setPresetAndEffects(36, config.basicPreset -1)
 											mod.command.message('<font color="#fff317">Empowered Petrax</font> - <font color="#fff317">None Type</font>');
 											return true;
 										
 										case 1071: // Withered Petrax
-											setPresetAndEffects(config.secondaryEffect, config.basicPreset -1)
+											setPresetAndEffects(36, config.basicPreset -1)
 											mod.command.message('<font color="#fff317">Withered Petrax</font> - <font color="#fff317">None Type</font>');
 											return true;
 									}
@@ -665,7 +665,7 @@ module.exports = function CardPresets(mod) {
 
     function clearEffects()
     {
-        for (let i = 0; i < 37; i++) {
+        for (let i = 0; i < 39; i++) {
             
             mod.toServer('C_DEACTIVATE_CARD_COMBINE_LIST', 1, {
                 id: i
