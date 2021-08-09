@@ -15,6 +15,7 @@ Link : https://github.com/odukjung/Tera-Def-Op-code
 1. Grotto of Lost Souls (Hard)
 2. Damned Citadel (Hard)
 3. Fusion Laboratory
+4. Velik's Hold
 
 
 ## Request
