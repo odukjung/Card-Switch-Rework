@@ -371,6 +371,32 @@ module.exports = function CardPresets(mod) {
 							}
 					}
 				
+				// Velik's Hold
+				if(zoneId == 9780) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// Grotto of Lost Souls (Hard)
+								case 780: 
+						
+									switch (event.templateId) 
+										{	
+											case 1000: // 1 BOSS
+											setPresetAndEffects(29, config.magicalPreset -1)
+											mod.command.message('<font color="#fff317">Kavador</font> - <font color="#fff317">Magical Creature</font>');
+											return true;
+											case 2000: // 2 BOSS
+											setPresetAndEffects(29, config.magicalPreset -1)
+											mod.command.message('<font color="#fff317">Prokyon</font> - <font color="#fff317">Magical Creature</font>');
+											return true;
+											case 3000: // 3 BOSS
+											setPresetAndEffects(32, config.demonPreset -1)
+											mod.command.message('<font color="#fff317">Veldeg</font> - <font color="#fff317">Demon</font>');
+											return true;
+										}
+							}
+					}
+				
 				//Lorcada
 				if(zoneId == 7022) 
 					{
