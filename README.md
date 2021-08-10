@@ -16,7 +16,7 @@ Link : https://github.com/odukjung/Tera-Def-Op-code
 2. Damned Citadel (Hard)
 3. Fusion Laboratory
 4. Velik's Hold
-
+5. Sky Cruiser (Hard)
 
 ## Request
 * 10 page Preset Card
