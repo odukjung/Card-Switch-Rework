@@ -51,6 +51,28 @@ module.exports = function CardPresets(mod) {
 									}
 							}
 					}
+					
+				// Sky Cruiser (Hard)
+				if(zoneId == 3036) 
+					{
+						switch (event.huntingZoneId)
+							{
+								// Sky Cruiser (Hard)
+								case 3036: 
+									
+									switch (event.templateId) 
+									{
+										case 1001: // 1 BOSS
+											setPresetAndEffects(32, config.demonPreset -1)
+											mod.command.message('<font color="#fff317">Darkan</font> - <font color="#fff317">Demon</font>');
+											return true;
+										case 1000: // 2 BOSS
+											setPresetAndEffects(32, config.demonPreset -1)
+											mod.command.message('<font color="#fff317">Darkan</font> - <font color="#fff317">Demon</font>');
+											return true;
+									}
+							}
+					}
 				
 				// Ruinous Manor (Normal)
 				if(zoneId == 9770) 
