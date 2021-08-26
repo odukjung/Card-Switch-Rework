@@ -8,6 +8,7 @@ Link : https://github.com/odukjung/Tera-Def-Op-code
 # Fix Bug
 - Azart set effect is change to new set effect
 - Fix set effect
+- Fix game Crash (Split => Same Type Card / Different Type Card  in that Zone)
 
 # Update
 - Support
