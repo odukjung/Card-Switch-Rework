@@ -18,6 +18,7 @@ Link : https://github.com/odukjung/Tera-Def-Op-code
 3. Fusion Laboratory
 4. Velik's Hold
 5. Sky Cruiser (Hard)
+6. Fusion Laboratory Trial
 
 ## Request
 * 10 page Preset Card
