@@ -134,7 +134,15 @@ module.exports = function CardPresets(mod) {
 						mod.command.message('<font color="#fff317">Corrupted Skynest (Hard)</font> - <font color="#fff317">Argon</font>');
 						return true;
 					}
-					
+			
+			//Fusion Laboratory Trial
+				if(zoneId == 3046) 
+					{
+						setPresetAndEffects(37, config.azartPreset -1)
+						mod.command.message('<font color="#fff317">Fusion Laboratory Trial</font> - <font color="#fff317">Azart</font>');
+						return true;
+					}
+			
 			//Fusion Laboratory
 				if(zoneId == 3105) 
 					{
