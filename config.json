@@ -1,21 +1,22 @@
 {
-"ancestorPreset" : 1,
-"azartPreset" : 2,
-"demonPreset" : 3,
-"argonPreset" : 4,
-"dragonPreset" : 5,
-"godPreset" : 6,
-"magicalPreset" : 7,
-"magicaldevicePreset" : 8,
-"giantPreset" : 9,
-"beastPreset" : 10,
-"basicPreset" : 10,
+    "ancestorPreset" : 1,
+    "azartPreset" : 2,
+    "demonPreset" : 3,
+    "argonPreset" : 4,
+	"dragonPreset" : 5,
+    "godPreset" : 6,
+    "magicalPreset" : 7,
+	"magicaldevicePreset" : 8,
+	"giantPreset" : 9,
+	"beastPreset" : 10,
+	"basicPreset" : 10,
 	
-"defaultEffect" : 22,
-"secondaryEffect" : 21,
+
+    "defaultEffect" : 22,
+    "secondaryEffect" : 21,
     
-"fishing" : false,
-"fishPreset" : 10,
+    "schm" : true,
+    "fishPreset" : 10,
     
-"rodID" : [206700, 206701, 206702, 206703, 206704, 206705, 206706, 206707, 206708, 206721, 206722, 206723, 206724, 206725, 206726, 206727, 206728, 206711, 206712, 206713, 206714, 206715, 206716, 206717, 206718]
+    "schmID" : [81000]
 }
