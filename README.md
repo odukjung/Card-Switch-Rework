@@ -5,20 +5,22 @@
 How to Add Opcode
 Link : https://github.com/odukjung/Tera-Def-Op-code
 
-# Fix Bug
-- Azart set effect is change to new set effect
-- Fix set effect
-- Fix game Crash (Split => Same Type Card / Different Type Card  in that Zone)
-
 # Update
-- Support
+- For Sky Cruiser (Hard) >> Add Option Set Card Change when use item
 
-1. Grotto of Lost Souls (Hard)
-2. Damned Citadel (Hard)
-3. Fusion Laboratory
-4. Velik's Hold
-5. Sky Cruiser (Hard)
-6. Fusion Laboratory Trial
+** when u already change card set if u wipe and come back to Sky Cruiser u need use Featherlight Potion again
+
+** when u die in firewall u can change card set
+
+** u can't change card set in combat
+
+| Item : Set Card |
+| ------------------------ |
+| "Common Pet Food"              : Demon Set |
+| "Featherlight Potion"          : Goblins Set |
+
+** Common Pet Food and Featherlight Potion can buy in Highwatch Merchant
+
 
 ## Request
 * 10 page Preset Card
