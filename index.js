@@ -923,20 +923,53 @@ module.exports = function CardPresets(mod) {
 			});
 		});	
 
-	/*
+
     mod.hook('C_USE_ITEM', 3, (event) => {
-        if(config.fishing)
-        {
-            config.rodID.forEach(e => {
-                if(event.id == e)
+		 if(event.id != 206046) return
                 {
-                    setPresetAndEffects(config.secondaryEffect, config.fishPreset -1)
-                }
-            });
-        }
-    });
-	*/
+                    mod.command.message('<font color="#fff317">Set Card Change</font> - <font color="#fff317">Demon Set</font>');
+                    for (let i = 0; i < 39; i++) {
+            
+					mod.toServer('C_DEACTIVATE_CARD_COMBINE_LIST', 1, {
+					id: i
+						})
+					}
+					
+					mod.toServer('C_ACTIVATE_CARD_COMBINE_LIST', 1, {
+					id: 22
+					})
+					
+					mod.toServer('C_ACTIVATE_CARD_COMBINE_LIST', 1, {
+					id: 32
+					})
+					
+					return true;
+                } 
+	});
     
+	mod.hook('C_USE_ITEM', 3, (event) => {
+		 if(event.id != 200001) return
+                {
+					mod.command.message('<font color="#fff317">Set Card Change</font> - <font color="#fff317">Goblins Set</font>');
+                    for (let i = 0; i < 39; i++) {
+            
+					mod.toServer('C_DEACTIVATE_CARD_COMBINE_LIST', 1, {
+					id: i
+						})
+					}
+					
+					mod.toServer('C_ACTIVATE_CARD_COMBINE_LIST', 1, {
+					id: 9
+					})
+					
+					mod.toServer('C_ACTIVATE_CARD_COMBINE_LIST', 1, {
+					id: 32
+					})
+					
+					return true;
+                } 
+	});
+	
     function setPresetAndEffects(colId, presetId)
     {
 
