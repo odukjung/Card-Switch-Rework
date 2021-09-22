@@ -1,4 +1,4 @@
-## card-switcher
+## Card-Switcher
 * Changes card presets and collection effect when entering a dungeon
 
 # Opcode for EU
