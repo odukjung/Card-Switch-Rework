@@ -6,13 +6,7 @@ How to Add Opcode
 Link : https://github.com/odukjung/Tera-Def-Op-code
 
 # Update
-- For Sky Cruiser (Hard) >> Add Option Set Card Change when use item
-
-** when u already change card set if u wipe and come back to Sky Cruiser u need use Featherlight Potion again
-
-** when u die in firewall u can change card set
-
-** u can't change card set in combat
+- Add - Desolarus Testing Grounds (Argon)
 
 | Item : Set Card |
 | ------------------------ |
