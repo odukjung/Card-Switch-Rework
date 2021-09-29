@@ -118,7 +118,15 @@ module.exports = function CardPresets(mod) {
 						mod.command.message('<font color="#fff317">Undying Warlord (Hard)</font> - <font color="#fff317">Ancestor</font>');
 						return true;
 					}
-					
+			
+			// Desolarus Testing Grounds
+				else if (zoneId == 3107) 
+					{
+						setPresetAndEffects(24, config.argonPreset -1)
+						mod.command.message('<font color="#fff317">Desolarus Testing Grounds</font> - <font color="#fff317">Argon</font>');
+						return true;
+					}
+			
 			// Corrupted Skynest
 				else if (zoneId == 3026) 
 					{
