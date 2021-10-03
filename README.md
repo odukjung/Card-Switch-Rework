@@ -1,6 +1,8 @@
 ## Card-Switcher
 * Changes card presets and collection effect when entering a dungeon
 
+** MOD isn't Auto-Update plz manual update 
+
 # Opcode for EU
 How to Add Opcode
 Link : https://github.com/odukjung/Tera-Def-Op-code
